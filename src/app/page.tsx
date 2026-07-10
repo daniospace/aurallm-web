@@ -43,7 +43,7 @@ const completion = await openai.chat.completions.create({
           <span>AuraLLM v1.0 is now live and generally available</span>
         </div>
 
-        <h1 className="max-w-4xl text-4xl font-extrabold tracking-tight sm:text-6xl lg:text-7xl leading-none">
+        <h1 className="max-w-4xl text-3xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl leading-none">
           The Developer-Friendly AI Gateway That{" "}
           <span className="bg-gradient-to-r from-primary via-emerald-400 to-teal-400 bg-clip-text text-transparent drop-shadow-[0_0_30px_rgba(16,185,129,0.2)]">
             Finance & Security
@@ -57,10 +57,12 @@ const completion = await openai.chat.completions.create({
 
         <div className="mt-10 flex flex-col sm:flex-row gap-4 items-center justify-center w-full">
           <a
-            href="http://localhost:8085"
+            href="https://github.com/daniospace/aurallm"
+            target="_blank"
+            rel="noopener noreferrer"
             className="w-full sm:w-auto relative inline-flex items-center justify-center gap-2 rounded-xl bg-primary px-8 py-4 text-base font-bold text-black hover:bg-primary-hover shadow-[0_0_20px_rgba(16,185,129,0.2)] hover:shadow-[0_0_35px_rgba(16,185,129,0.4)] transition-all duration-300"
           >
-            Launch Console
+            Deploy Free on GitHub
           </a>
           <Link
             href="/features"
@@ -196,6 +198,191 @@ const completion = await openai.chat.completions.create({
         </div>
       </section>
 
+      {/* Interactive DX Pipeline Diagram Section */}
+      <section className="space-y-12 relative overflow-hidden py-12">
+        <div className="text-center max-w-3xl mx-auto space-y-4">
+          <div className="inline-flex items-center gap-1.5 rounded-full border border-primary/20 bg-primary/5 px-3 py-1 text-xs font-semibold text-primary">
+            🛡️ Zero Trust &amp; FinOps Governance
+          </div>
+          <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+            Comprehensive LLM Gateway Architecture
+          </h2>
+          <p className="text-zinc-400 text-sm">
+            Enforce strict budget limits, block PII data leaks locally, and perform non-blocking model audits synchronously inside your secure private cloud network.
+          </p>
+        </div>
+
+        {/* CSS-Animated Diagram Grid */}
+        <div className="grid grid-cols-1 lg:grid-cols-11 items-center gap-4 max-w-5xl mx-auto relative px-4">
+          
+          {/* Node 1: AI Applications & Agents */}
+          <div className="lg:col-span-3 border border-border bg-panel/70 p-6 rounded-2xl relative group hover:border-zinc-700 transition-all duration-300 flex flex-col justify-between min-h-[220px]">
+            <div className="absolute inset-0 bg-gradient-to-b from-white/[0.02] to-transparent rounded-2xl pointer-events-none" />
+            <div>
+              <div className="flex items-center gap-3 mb-4">
+                <span className="text-2xl">🤖</span>
+                <div>
+                  <h4 className="text-sm font-bold text-white">AI Applications</h4>
+                  <p className="text-[10px] text-zinc-500 font-mono">Apps &amp; Autonomous Agents</p>
+                </div>
+              </div>
+              <div className="bg-black/90 p-3 rounded-xl border border-border/50 text-[11px] leading-relaxed text-zinc-400">
+                User Prompts, Autonomous Tool Calls, or LLM Orchestrations (LangChain, LlamaIndex, MCP Clients).
+              </div>
+            </div>
+            <div className="text-[10px] text-zinc-500 font-semibold mt-4">
+              📤 Outgoing traffic enters the secure gateway
+            </div>
+          </div>
+
+          {/* Connection 1: Client to Gateway (Animated Arrow) */}
+          <div className="lg:col-span-1 h-12 lg:h-auto flex lg:flex-col items-center justify-center relative">
+            {/* Horizontal Line for Large screens, Vertical for Mobile */}
+            <div className="hidden lg:block w-full h-[2px] bg-gradient-to-r from-border via-primary to-primary relative">
+              <div className="absolute top-1/2 left-0 -translate-y-1/2 w-2 h-2 rounded-full bg-primary animate-[ping_1.5s_infinite] shadow-[0_0_10px_#10b981]" style={{ animationDelay: '0s' }} />
+            </div>
+            <div className="lg:hidden w-[2px] h-full bg-gradient-to-b from-border via-primary to-primary relative min-h-[48px]">
+              <div className="absolute left-1/2 top-0 -translate-x-1/2 w-2 h-2 rounded-full bg-primary animate-[ping_1.5s_infinite] shadow-[0_0_10px_#10b981]" style={{ animationDelay: '0s' }} />
+            </div>
+          </div>
+
+          {/* Node 2: AuraLLM Security Gateway */}
+          <div className="lg:col-span-3 border border-primary/30 bg-black p-6 rounded-2xl relative shadow-[0_0_30px_rgba(16,185,129,0.08)] hover:border-primary/60 transition-all duration-300 group">
+            <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-primary text-black text-[9px] font-extrabold uppercase px-2.5 py-0.5 rounded-full tracking-wider shadow-[0_0_10px_rgba(16,185,129,0.4)]">
+              Local VPC Gateway
+            </div>
+            
+            <div className="flex items-center gap-3 mb-4">
+              <span className="text-2xl">🟢</span>
+              <div>
+                <h4 className="text-sm font-bold text-white">AuraLLM Proxy</h4>
+                <p className="text-[10px] text-primary font-mono">port:8085</p>
+              </div>
+            </div>
+
+            {/* Sub-nodes of the gateway pipeline */}
+            <div className="space-y-2">
+              {/* Sub-node 1: Local Privacy Guard */}
+              <div className="border border-border/85 bg-panel/80 p-2.5 rounded-xl flex items-center justify-between text-xs cursor-help relative group/tooltip">
+                <div className="flex items-center gap-2">
+                  <span className="text-emerald-400">🔒</span>
+                  <span className="font-semibold text-zinc-300">Local Privacy Guard</span>
+                </div>
+                <span className="text-[9px] font-bold text-emerald-400 bg-emerald-500/10 px-1.5 py-0.5 rounded">Protected</span>
+                {/* Tooltip */}
+                <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-48 p-2.5 bg-black border border-border text-[10px] leading-normal rounded-lg shadow-xl opacity-0 scale-95 group-hover/tooltip:opacity-100 group-hover/tooltip:scale-100 transition-all duration-200 pointer-events-none z-50">
+                  <span className="text-primary font-bold">PII Redaction:</span> Instantly hides credit cards, SSNs, and secrets locally so cloud providers never see them.
+                </div>
+              </div>
+
+              {/* Sub-node 2: Cost Control Engine */}
+              <div className="border border-border/85 bg-panel/80 p-2.5 rounded-xl flex items-center justify-between text-xs cursor-help relative group/tooltip">
+                <div className="flex items-center gap-2">
+                  <span className="text-emerald-400">💵</span>
+                  <span className="font-semibold text-zinc-300">Cost Control Engine</span>
+                </div>
+                <span className="text-[9px] font-bold text-emerald-400 bg-emerald-500/10 px-1.5 py-0.5 rounded">Budget Safe</span>
+                {/* Tooltip */}
+                <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-48 p-2.5 bg-black border border-border text-[10px] leading-normal rounded-lg shadow-xl opacity-0 scale-95 group-hover/tooltip:opacity-100 group-hover/tooltip:scale-100 transition-all duration-200 pointer-events-none z-50">
+                  <span className="text-primary font-bold">Spend Limits:</span> Stops runaway AI costs by locking spending caps globally across all your developer teams.
+                </div>
+              </div>
+
+              {/* Sub-node 3: Unified Model Access */}
+              <div className="border border-border/85 bg-panel/80 p-2.5 rounded-xl flex items-center justify-between text-xs cursor-help relative group/tooltip">
+                <div className="flex items-center gap-2">
+                  <span className="text-emerald-400">🔄</span>
+                  <span className="font-semibold text-zinc-300">Unified Model Access</span>
+                </div>
+                <span className="text-[9px] font-bold text-emerald-400 bg-emerald-500/10 px-1.5 py-0.5 rounded">Multi-Model</span>
+                {/* Tooltip */}
+                <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-48 p-2.5 bg-black border border-border text-[10px] leading-normal rounded-lg shadow-xl opacity-0 scale-95 group-hover/tooltip:opacity-100 group-hover/tooltip:scale-100 transition-all duration-200 pointer-events-none z-50">
+                  <span className="text-primary font-bold">Unified Integration:</span> Allows developers to call OpenAI, Anthropic, or Gemini using a single, unified coding format.
+                </div>
+              </div>
+
+              {/* Sub-node 4: Rate & Token Limiter */}
+              <div className="border border-border/85 bg-panel/80 p-2.5 rounded-xl flex items-center justify-between text-xs cursor-help relative group/tooltip">
+                <div className="flex items-center gap-2">
+                  <span className="text-emerald-400">🚦</span>
+                  <span className="font-semibold text-zinc-300">Rate &amp; Token Limiter</span>
+                </div>
+                <span className="text-[9px] font-bold text-emerald-400 bg-emerald-500/10 px-1.5 py-0.5 rounded">Rate Safe</span>
+                {/* Tooltip */}
+                <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-48 p-2.5 bg-black border border-border text-[10px] leading-normal rounded-lg shadow-xl opacity-0 scale-95 group-hover/tooltip:opacity-100 group-hover/tooltip:scale-100 transition-all duration-200 pointer-events-none z-50">
+                  <span className="text-primary font-bold">Rate Limiting:</span> Enforces limits on requests and tokens to prevent teams from overloading your API thresholds.
+                </div>
+              </div>
+
+              {/* Sub-node 5: Outage Auto-Failover */}
+              <div className="border border-border/85 bg-panel/80 p-2.5 rounded-xl flex items-center justify-between text-xs cursor-help relative group/tooltip">
+                <div className="flex items-center gap-2">
+                  <span className="text-emerald-400">🛡️</span>
+                  <span className="font-semibold text-zinc-300">Outage Failover</span>
+                </div>
+                <span className="text-[9px] font-bold text-emerald-400 bg-emerald-500/10 px-1.5 py-0.5 rounded">High Avail</span>
+                {/* Tooltip */}
+                <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-48 p-2.5 bg-black border border-border text-[10px] leading-normal rounded-lg shadow-xl opacity-0 scale-95 group-hover/tooltip:opacity-100 group-hover/tooltip:scale-100 transition-all duration-200 pointer-events-none z-50">
+                  <span className="text-primary font-bold">Auto-Failover:</span> Automatically switches models or API providers if OpenAI or Anthropic suffers an outage.
+                </div>
+              </div>
+
+              {/* Sub-node 6: Live Cost Analytics */}
+              <div className="border border-border/85 bg-panel/80 p-2.5 rounded-xl flex items-center justify-between text-xs cursor-help relative group/tooltip">
+                <div className="flex items-center gap-3">
+                  <span className="text-emerald-400">📊</span>
+                  <span className="font-semibold text-zinc-300">Live Cost Analytics</span>
+                </div>
+                <span className="text-[9px] font-bold text-emerald-400 bg-emerald-500/10 px-1.5 py-0.5 rounded">Real-Time</span>
+                {/* Tooltip */}
+                <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-48 p-2.5 bg-black border border-border text-[10px] leading-normal rounded-lg shadow-xl opacity-0 scale-95 group-hover/tooltip:opacity-100 group-hover/tooltip:scale-100 transition-all duration-200 pointer-events-none z-50">
+                  <span className="text-primary font-bold">Analytics Tracking:</span> Tracks exact token use, speed, and dollar spend per team with zero latency.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Connection 2: Gateway to LLM (Animated Arrow) */}
+          <div className="lg:col-span-1 h-12 lg:h-auto flex lg:flex-col items-center justify-center relative">
+            <div className="hidden lg:block w-full h-[2px] bg-gradient-to-r from-primary via-border to-border relative">
+              <div className="absolute top-1/2 left-0 -translate-y-1/2 w-2 h-2 rounded-full bg-primary animate-[ping_1.5s_infinite] shadow-[0_0_10px_#10b981]" style={{ animationDelay: '0.5s' }} />
+            </div>
+            <div className="lg:hidden w-[2px] h-full bg-gradient-to-b from-primary via-border to-border relative min-h-[48px]">
+              <div className="absolute left-1/2 top-0 -translate-x-1/2 w-2 h-2 rounded-full bg-primary animate-[ping_1.5s_infinite] shadow-[0_0_10px_#10b981]" style={{ animationDelay: '0.5s' }} />
+            </div>
+          </div>
+
+          {/* Node 3: Models, Servers & Agents */}
+          <div className="lg:col-span-3 border border-border bg-panel/70 p-6 rounded-2xl relative group hover:border-zinc-700 transition-all duration-300 flex flex-col justify-between min-h-[220px]">
+            <div className="absolute inset-0 bg-gradient-to-b from-white/[0.02] to-transparent rounded-2xl pointer-events-none" />
+            <div>
+              <div className="flex items-center gap-3 mb-4">
+                <span className="text-2xl">☁️</span>
+                <div>
+                  <h4 className="text-sm font-bold text-white">Models &amp; Servers</h4>
+                  <p className="text-[10px] text-zinc-500 font-mono">LLM Providers, MCPs, &amp; Tools</p>
+                </div>
+              </div>
+              <div className="bg-black/90 p-3 rounded-xl border border-border/50 text-[11px] leading-relaxed text-zinc-400">
+                Secure, cost-optimized routing to public models (OpenAI, Claude), local LLMs (LLaMA), or autonomous MCP servers and tool registries.
+              </div>
+            </div>
+            <div className="text-[10px] text-zinc-500 font-semibold mt-4">
+              🔒 Zero-retention &amp; complete spend transparency
+            </div>
+          </div>
+
+        </div>
+
+        {/* Global Keyframes CSS injection inside JSX */}
+        <style>{`
+          @keyframes ping {
+            0% { left: 0%; opacity: 1; }
+            100% { left: 100%; opacity: 0; }
+          }
+        `}</style>
+      </section>
+
       {/* Target Audiences / High Contrast Value Propositions */}
       <section className="space-y-12">
         <div className="text-center max-w-3xl mx-auto space-y-4">
@@ -269,10 +456,12 @@ const completion = await openai.chat.completions.create({
         </p>
         <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
           <a
-            href="http://localhost:8085"
+            href="https://github.com/daniospace/aurallm"
+            target="_blank"
+            rel="noopener noreferrer"
             className="rounded-xl bg-primary px-6 py-3 text-sm font-bold text-black hover:bg-primary-hover shadow-lg shadow-primary/20 transition-all duration-200"
           >
-            Launch Admin Console
+            Get Started (Free)
           </a>
           <Link
             href="/compare"

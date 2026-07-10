@@ -132,7 +132,7 @@ export default function PricingPage() {
           </div>
           <div className="pt-8">
             <a
-              href="http://localhost:8085"
+              href="mailto:sales@aurallm.com?subject=AuraLLM Pro 14-Day Trial Request"
               className="w-full inline-flex items-center justify-center rounded-xl bg-primary py-3 text-xs font-bold text-black hover:bg-primary-hover shadow-lg shadow-primary/20 transition-all"
             >
               Start 14-Day Free Trial

@@ -53,7 +53,7 @@ export default function RootLayout({
               <div className="flex items-center gap-4">
                 {/* GitHub Tag */}
                 <a 
-                  href="https://github.com/aurallm/gateway" 
+                  href="https://github.com/daniospace/aurallm" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="hidden sm:inline-flex items-center gap-1.5 rounded-full border border-border bg-panel px-3 py-1 text-xs font-semibold text-zinc-300 hover:text-primary hover:border-primary/50 transition-all"
@@ -117,7 +117,7 @@ export default function RootLayout({
                   <li><Link href="/blog" className="hover:text-primary transition-colors">Blog</Link></li>
                   <li><Link href="/changelog" className="hover:text-primary transition-colors">Changelog</Link></li>
                   <li><Link href="/customers" className="hover:text-primary transition-colors">Customers</Link></li>
-                  <li><a href="http://localhost:8085" className="hover:text-primary transition-colors">Launch Console</a></li>
+                  <li><a href="https://github.com/daniospace/aurallm" className="hover:text-primary transition-colors">Deploy Free</a></li>
                 </ul>
               </div>
             </div>
@@ -127,7 +127,7 @@ export default function RootLayout({
               <div className="flex gap-4">
                 <a href="#" className="hover:text-primary transition-colors">Privacy Policy</a>
                 <a href="#" className="hover:text-primary transition-colors">Terms of Service</a>
-                <a href="https://github.com/aurallm/gateway" className="hover:text-primary transition-colors">GitHub</a>
+                <a href="https://github.com/daniospace/aurallm" className="hover:text-primary transition-colors">GitHub</a>
               </div>
             </div>
           </div>
