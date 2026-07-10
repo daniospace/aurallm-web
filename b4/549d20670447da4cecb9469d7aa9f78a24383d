@@ -1,0 +1,39 @@
+src/app/page.tsx
+  s_fa997fbd4b149e::t_ea7a3b9a99458d 203,205,208,211,294,296,298-299,301-303,305-306,314-316,318-319,322-325
+  s_fa997fbd4b149e::t_9d036b43fa5eca 459-461,464
+  s_fa997fbd4b149e::t_83c12dd0999765 357
+  s_fa997fbd4b149e::t_df9ed312b5b602 263-264,281,288-290,292-293,307,309,311-312,327-329,331,333,335,337-338
+  s_fa997fbd4b149e::t_be6604c88ebc57 355-356,358-364,366-368,370-371
+  s_fa997fbd4b149e::t_5cc3c6485e9336 46
+  s_fa997fbd4b149e::t_30df9f252593fb 60-62,65
+  s_fa997fbd4b149e::t_6a1f6caf015fdc 218-219,221-227,229-231,233-234
+  s_fa997fbd4b149e::t_4a65ccf6055e46 265,268-269,271,274,278,282,284,287,291,295,297,300,304,308,310,313,317,320-321,326,330,332,334,336,339
+  s_fa997fbd4b149e::t_ebdb5827a6760c 201-202,204,206-207,209-210,212-217,220,228,232,235-262,266-267,270,272-273,275-277,279-280,283,285-286,340-354,365,369,372-385
+src/app/layout.tsx
+  h_d9442f917ff202 56
+  s_fa997fbd4b149e::t_763a40fcbc379b 130
+  s_fa997fbd4b149e::t_82c641f0279c20 120
+src/app/pricing/page.tsx
+  s_fa997fbd4b149e::t_42580c27f50b27 135
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.11",
+  "base_commit_sha": "b4549d20670447da4cecb9469d7aa9f78a24383d",
+  "prompts": {},
+  "humans": {
+    "h_d9442f917ff202": {
+      "author": "daniospace <daniospace@users.noreply.github.com>"
+    }
+  },
+  "sessions": {
+    "s_fa997fbd4b149e": {
+      "agent_id": {
+        "tool": "gemini",
+        "id": "be536f39-95e0-4ae1-aabe-17ba84cb11b2",
+        "model": "gemini-3.5-flash"
+      },
+      "human_author": "daniospace <daniospace@users.noreply.github.com>"
+    }
+  }
+}
