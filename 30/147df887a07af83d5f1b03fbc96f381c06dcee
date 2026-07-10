@@ -1,0 +1,50 @@
+src/app/pricing/page.tsx
+  s_fa997fbd4b149e::t_e55c941b944ce4 1-221
+src/app/features/page.tsx
+  s_fa997fbd4b149e::t_31fa92ec709c14 1-215
+src/app/globals.css
+  s_fa997fbd4b149e::t_fad46527bea1e9 5-24
+  s_fa997fbd4b149e::t_f1bfe128a29b4c 2-4
+  s_fa997fbd4b149e::t_827407f3d7270e 25
+src/app/layout.tsx
+  s_fa997fbd4b149e::t_43b423f46cee7b 3-135
+  s_fa997fbd4b149e::t_d6cbbaa3000def 1-2
+  s_fa997fbd4b149e::t_cfb5346493e32d 136-138
+src/app/security/page.tsx
+  s_fa997fbd4b149e::t_23df72c687e982 1-154
+src/app/blog/page.tsx
+  s_fa997fbd4b149e::t_a7f1352a5765aa 1-150
+src/app/compare/page.tsx
+  s_fa997fbd4b149e::t_b1f78e4710c688 1-200
+src/app/customers/page.tsx
+  s_fa997fbd4b149e::t_3aad327927ee19 1-143
+src/app/changelog/page.tsx
+  s_fa997fbd4b149e::t_bb7b343d6a3026 1-110
+src/app/sitemap.ts
+  s_fa997fbd4b149e::t_f4bd76fc0765e3 1-13
+src/app/robots.ts
+  s_fa997fbd4b149e::t_cc7a487c0d40db 1-11
+src/app/page.tsx
+  s_fa997fbd4b149e::t_e91722a8c3c88c 1-284
+  s_fa997fbd4b149e::t_7ff2c3c7f218ce 285-287
+AGENTS.md
+  s_fa997fbd4b149e::t_b34dbc0cd06b0d 1-5
+CLAUDE.md
+  s_fa997fbd4b149e::t_f099fe6cefe261 1
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.11",
+  "base_commit_sha": "30147df887a07af83d5f1b03fbc96f381c06dcee",
+  "prompts": {},
+  "sessions": {
+    "s_fa997fbd4b149e": {
+      "agent_id": {
+        "tool": "gemini",
+        "id": "be536f39-95e0-4ae1-aabe-17ba84cb11b2",
+        "model": "gemini-3.5-flash"
+      },
+      "human_author": "daniospace <daniospace@users.noreply.github.com>"
+    }
+  }
+}
